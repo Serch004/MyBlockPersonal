@@ -1,3 +1,54 @@
+/* aplicar a toda la pag */
+*{
+    box-sizing: border-box;
+}
+/* cambiar el tamaño de titulos y parrafos */
+h1 {font-size: 3.5em; }
+h2 {font-size: 2.7em; }
+h3 {font-size: 2em; }
+p {font-size: 1.5em; }
+ul {list-style: none;}
+li {font-size: 1.5em;}
+/* Margen y tipo de letra */
 body {
     background-color: #fbefef;
+}
+
+}
+/* cambio del fondo del encabezado  */
+header {
+    background-color: rgb(245,245,245);
+
+}
+/* cambio del fondo del encabezado  */
+header .logo {
+    margin: 0;
+    padding: 25px, 30px;
+    font-weight: bold;
+    color: #01a9db;
+    font-size: 1.7em;
+
+}
+/* centrar horizontal y se ordenen en columna */
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* margen y centrado del nav*/
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+/* estilo de texto color nav*/
+header a {
+    padding: 5px, 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0b243b;
+}
+header a:hover {
+    color: #01a9db;
 }

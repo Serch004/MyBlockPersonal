@@ -200,7 +200,8 @@ footer a:hover {
 
   }
 
-  @media (min-width: 820px) {
+  
+  @media (min-width: 720px), (min-height: 600px) {
 
     .container{
         padding-left: 30px;
@@ -340,10 +341,5 @@ footer a:hover {
     }
   }
 
-  @media (width: 1000px){
-    #lugares .container{
-        background-position: calc(100vw - 800px);
-    }
-  }
 
   

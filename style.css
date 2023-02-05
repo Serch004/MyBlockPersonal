@@ -14,11 +14,22 @@ body {
     font-family: 'roboto' sans-serif;
     margin: 0;
 }
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #01a9db;
+}
 /* ancho maximo y margen del container */
 .container {
     max-width: 1400px;
     margin: auto;
-    background-color: #fbefef;
+    background-color: #0b243b;
 }
 .color-acento {color: #01a9db}
 /* cambio del fondo del encabezado  */
@@ -44,17 +55,18 @@ header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 /* estilo de texto color nav*/
 header a {
+    margin: 2px;
     padding: 5px, 12px;
     text-decoration: none;
     font-weight: bold;
-    color: #0b243b;
+    color: #d5eafd;
 }
 header a:hover {
-    color: #01a9db;
+    color: #00dca1c5;
 }
 /* */
 #inicio {
@@ -71,26 +83,267 @@ header a:hover {
     rgba(0,0,0,0.5)
   )
   ,url(imgs/Paper.jpg);
-  background: repeat:no-repeat;
+  background: repeat: no-repeat;
   background-size:cover;
   background-position: center center;
 }
 
 #soy-yo .container {
+    background-color: beige;
     text-align: center;
     padding: 150px 12px;
 }
 
 #LatestNews {
+    
     color: white;
     text-align: center;
 }
 
 
-#LatestNews .container {
-    padding: 100px 0px;  
+#LatestNews .container {  
     background-color: rgba(30,30,30);
+    padding: 100px 0px;
   }
+  #LatestNews h2 {
+    margin-top: 0;
+    font-size: 4.5em;
+    color: #00FF80;
+  }
+
   #LatestNews p {
       display: none;
   }
+
+  #LatestNews .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+  }
+
+  .carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+      )
+      ,url(imgs/graduacion.jpg);
+  }
+
+  .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+      )
+      ,url(imgs/LogrosAcademicos.jpg);
+  }
+
+  .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+      )
+      ,url(imgs/laboral.jpg);  
+  }
+
+  #lugares .container {
+    text-align: center;
+    padding: 200px 12px;
+    background-color: rgba(127, 255, 212, 0.446);
+  }
+
+  #lugares li {
+    margin: 16px 0px;
+    font-weight: bold;
+  }
+
+  footer{
+    background-color: #0b243b;
+  }
+
+  footer a{
+    display: flex;
+    justify-content: left;
+    align-content:flex-start;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 9px 20px;
+    transition: color 0.3s ease;
+    color:#efefef;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00ffff
+}
+
+
+  footer P {
+    text-align: right;
+    display: flex;
+    justify-content:flex-end;
+    margin: 0;
+    color:rgb(150,150,150);
+    padding: 10px 30px;
+
+  }
+
+  footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    align-items:initial;
+
+  }
+
+  @media (min-width: 600px){
+
+    .container{
+        padding-left: 30px;
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 40px;
+    }
+
+    header a{
+        margin: 10px;
+    }
+
+    #inicio h1{
+        font-size: 6em;
+    }
+
+    #soy-yo .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #soy-yo .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #soy-yo h2{
+        margin: 0;
+    }
+
+    #soy-yo .img-container{
+        background-image: url("imgs/software.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+    }
+
+    #LatestNews .noticias{
+        display: flex;
+        justify-content: center;
+    }
+
+    #LatestNews p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #LatestNews h3{
+        background: 10px 30px;
+        margin-top: 0;
+        color: #ffa0f7;
+    }
+
+    #LatestNews p{
+
+        margin-top: 0;
+        color: #feffbd;
+    }
+
+    #LatestNews .carta{
+        padding: 30px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(60,60,60);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+          )
+          ,url(imgs/graduacionCort.jpg);
+      }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+          )
+          ,url(imgs/LogrosAcademicosCort.jpg);
+      }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+          )
+          ,url(imgs/laboralCort.jpg);  
+      }
+    #lugares .container {
+        background-image: url("imgs/Lugares.jpg");
+        background-repeat: no-repeat;
+        background-size: 400px 420px;
+        background-position: calc(170vw - 1500px) 170px;
+      }
+
+    #lugares .container {
+        text-align:initial;        
+    }
+    #lugares h2 {
+        margin: 20px;
+        color: #ff0808de;
+    } 
+
+    #lugares ul {
+        margin-left: 40px;
+        color: #9e0585;
+    }
+
+    #footer .container{
+        justify-content: flex-end;
+    }
+  }
+
+  @media (width: 1000px){
+    #lugares .container{
+        background-position: calc(100vw - 800px);
+    }
+  }
+
+  

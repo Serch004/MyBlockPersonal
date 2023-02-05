@@ -201,7 +201,7 @@ footer a:hover {
   }
 
   
-  @media (min-width: 720px), (min-height: 600px) {
+  @media (min-width: 1030px), (min-height: 650px) {
 
     .container{
         padding-left: 30px;

@@ -118,8 +118,8 @@ header a:hover {
   #LatestNews .carta {
     background-position: center center;
     background-size: cover;
-    padding: 30px;
-    margin: 30px;
+    padding: 15px;
+    margin: 20px;
     border-radius: 20px;
   }
 
@@ -201,7 +201,7 @@ footer a:hover {
   }
 
   
-  @media (min-width: 650px), (min-height: 1030px) {
+  @media (min-width: 600px), (min-height: 600px) {
 
     .container{
         padding-left: 30px;

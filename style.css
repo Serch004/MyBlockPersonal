@@ -77,13 +77,8 @@ header a:hover {
   flex-direction: column;
   height: 90vh;
   color: white;
-  background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  )
-  ,url(imgs/Paper.jpg);
-  background: repeat: no-repeat;
+  background-image: url(imgs/Paper.jpg);
+  background: repeat no-repeat;
   background-size:cover;
   background-position: center center;
 }
@@ -201,7 +196,7 @@ footer a:hover {
   }
 
   
-  @media (min-width: 600px), (min-height: 600px) {
+  @media (min-aspect-ratio: 8/5) {
 
     .container{
         padding-left: 30px;
@@ -342,4 +337,18 @@ footer a:hover {
   }
 
 
-  
+.contenedor-80{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.comentarios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media(max-width: 720px){
+    .comentarios{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(7, 1fr);
+    }
+}
